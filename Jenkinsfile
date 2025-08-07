@@ -13,7 +13,7 @@ pipeline {
                 echo 'Maven으로 빌드 시작'
                 sh 'mvn clean package'
             }
-            
+        }
         stage('2. Docker 확인 버전') {
             steps {
                 sh 'docker version'
